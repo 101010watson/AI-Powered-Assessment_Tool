@@ -35,13 +35,18 @@ public class HomeController {
     @PostMapping("/generate")
     public String generate(@RequestParam(required = false) String sourceText, @RequestParam(required = false) MultipartFile pdfFile, Model model, HttpSession httpSession) throws IOException {
         // recieves the reponse object
-        if(!pdfFile.isEmpty()){
-            sourceText = pdfService.extractText(pdfFile);
+        try{
+            if (!pdfFile.isEmpty()) {
+                sourceText = pdfService.extractText(pdfFile);
+            }
+            QuizResponseDTO quizResponseDTO = aiService.generateMcq(sourceText);
+            httpSession.setAttribute("quiz", quizResponseDTO);
+            model.addAttribute("quiz", quizResponseDTO);
+            return "prep-page";
+        } catch (Exception e) {
+            model.addAttribute("error","unable to generate the quiz. Please check your internt connection");
+            return "default-page";
         }
-         QuizResponseDTO quizResponseDTO = aiService.generateMcq(sourceText);
-         httpSession.setAttribute("quiz",quizResponseDTO);
-         model.addAttribute("quiz",quizResponseDTO);
-         return "prep-page";
      }
 
      @PostMapping("/submit")
