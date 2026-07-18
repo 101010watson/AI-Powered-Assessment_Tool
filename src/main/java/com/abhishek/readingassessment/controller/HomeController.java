@@ -27,7 +27,7 @@ public class HomeController {
     }
 
 
-    @GetMapping("/quickprep")
+    @GetMapping("/")
     public String generator(){
          return "default-page";
      }
