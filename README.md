@@ -65,16 +65,6 @@ QuickPrep uses **Google Gemini** to generate meaningful, context-aware multiple-
 
 ---
 
-## 📷 Screenshots
-
-> ![](/home/abhishek-sahu/Desktop/AI-Powered-Assessment_Tool/project_images/Screenshot from 2026-07-18 14-57-12.png)
-> ![](/home/abhishek-sahu/Desktop/AI-Powered-Assessment_Tool/project_images/Screenshot from 2026-07-18 14-57-20.png)
-> ![](/home/abhishek-sahu/Desktop/AI-Powered-Assessment_Tool/project_images/Screenshot from 2026-07-18 14-57-37.png)
-> ![](/home/abhishek-sahu/Desktop/AI-Powered-Assessment_Tool/project_images/Screenshot from 2026-07-18 14-57-54.png)
-> ![](/home/abhishek-sahu/Desktop/AI-Powered-Assessment_Tool/project_images/Screenshot from 2026-07-18 14-57-58.png)
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to fork the repository, create a feature branch, and submit a pull request.
