@@ -14,4 +14,5 @@ public class QuestionDTO {
     private List<String> options;
     private int correctAnswer;
     private String category;
+    private Integer selectedAnswer;
 }
