@@ -51,6 +51,7 @@
              th:if="${error}"
              th:text="${error}">
         </div>
+<!--         enctype="multipart/form-data" this sends back the data in a structured format unlike simple text-->
         <form method="post" th:action="@{/generate}" enctype="multipart/form-data" class="quiz-form">
             <label for="sourceText" class="field-label">Your study material</label>
             <textarea
