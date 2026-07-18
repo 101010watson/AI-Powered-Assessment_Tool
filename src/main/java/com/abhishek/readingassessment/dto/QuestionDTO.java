@@ -14,5 +14,5 @@ public class QuestionDTO {
     private List<String> options;
     private int correctAnswer;
     private String category;
-    private Integer selectedAnswer;
+    private Integer selectedAnswer; // used in the report page to indicate the right answer
 }
