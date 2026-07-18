@@ -539,3 +539,13 @@ body:has(#themeToggle:checked) .toggle-thumb {
   .btn-primary { justify-content: center; }
   .footer-inner { flex-direction: column; text-align: center; }
 }
+
+.error-banner{
+    margin-bottom:20px;
+    padding:14px 18px;
+    border-radius:12px;
+    border:1px solid rgba(255,80,80,.4);
+    background:rgba(255,80,80,.12);
+    color:#ff6b6b;
+    font-weight:500;
+}
